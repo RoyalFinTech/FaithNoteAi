@@ -1,0 +1,19 @@
+{
+  "name": "faithnotes-dev-workflow",
+  "version": "1.0.0",
+  "description": "Local network development workflow for FaithNotes AI",
+  "private": true,
+  "scripts": {
+    "start": "node start-all.js",
+    "setup": "cd backend && npm install",
+    "lint": "eslint dev-server/server.js start-all.js",
+    "lint:frontend": "eslint --plugin html --ext .html public/faithnotes-ai.html",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:all": "npm run lint && npm run lint:frontend && npm run lint:backend",
+    "test": "echo \"No automated test suite exists yet — see README 'Known limitations'.\" && exit 0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-html": "^8.1.1"
+  }
+}
