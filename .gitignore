@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Backend secrets
+backend/.env
+.env
+!.env.example
+
+# SQLite runtime files
+backend/database/*.sqlite
+backend/database/*.sqlite-shm
+backend/database/*.sqlite-wal
+backend/test/*.sqlite
+backend/test/*.sqlite-shm
+backend/test/*.sqlite-wal
+
+# User-uploaded runtime data
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Local certificates
+certs/*.pem
+certs/*.key
+certs/*.crt
+
+# Logs and editor artifacts
+backend/logs/*
+!backend/logs/.gitkeep
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.temp
+.cache/
+.eslintcache
